@@ -1,0 +1,42 @@
+{
+    "include": [
+        "./src/**/*",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "strict": true,
+        "esModuleInterop": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "incremental": true,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@shared/*": [
+                "@shared/*"
+            ],
+            "FlexForm/*": [
+                "FlexForm/*"
+            ]
+        }
+    }
+}
